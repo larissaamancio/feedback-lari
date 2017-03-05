@@ -1,0 +1,30 @@
+{
+  "name": "feedback",
+  "version": "0.1.0",
+  "private": false,
+  "engines": {
+    "node": "7.6.0"
+  },
+  "devDependencies": {
+    "codecov": "^1.0.1",
+    "react-scripts": "0.9.0"
+  },
+  "dependencies": {
+    "firebase": "^3.6.10",
+    "immutable": "^3.8.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0"
+  },
+  "scripts": {
+    "start": "NODE_PATH=src react-scripts start",
+    "build": "NODE_PATH=src react-scripts build",
+    "test": "NODE_PATH=src react-scripts test --coverage --env=jsdom && codecov -t bbaa888c-b3bf-4d96-9c41-3ca707d4f90e",
+    "eject": "NODE_PATH=src react-scripts eject"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  }
+}
